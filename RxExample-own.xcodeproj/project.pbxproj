@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		5B25246B20F9AE8B0091287A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25246A20F9AE8B0091287A /* AppDelegate.swift */; };
-		5B25246D20F9AE8B0091287A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25246C20F9AE8B0091287A /* ViewController.swift */; };
 		5B25247020F9AE8B0091287A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B25246E20F9AE8B0091287A /* Main.storyboard */; };
 		5B25247220F9AE8B0091287A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B25247120F9AE8B0091287A /* Assets.xcassets */; };
 		5B25247520F9AE8B0091287A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B25247320F9AE8B0091287A /* LaunchScreen.storyboard */; };
+		5B25247D20FA11AF0091287A /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25247C20FA11AF0091287A /* InitViewController.swift */; };
+		5B25248020FA12E20091287A /* GetImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25247F20FA12E20091287A /* GetImageViewController.swift */; };
+		5B25248220FA25750091287A /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25248120FA25750091287A /* ColorViewController.swift */; };
+		5B25248420FA2C1D0091287A /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25248320FA2C1D0091287A /* GroupListViewController.swift */; };
+		B90629D56EF65230188C6DFC /* Pods_RxExample_own.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1466FA93226BFBC01CA81DF6 /* Pods_RxExample_own.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5B25246720F9AE8B0091287A /* GetImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1466FA93226BFBC01CA81DF6 /* Pods_RxExample_own.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxExample_own.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B25246720F9AE8B0091287A /* RxExample-own.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxExample-own.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B25246A20F9AE8B0091287A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B25246C20F9AE8B0091287A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B25246F20F9AE8B0091287A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B25247120F9AE8B0091287A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B25247420F9AE8B0091287A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B25247620F9AE8B0091287A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B25247C20FA11AF0091287A /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		5B25247F20FA12E20091287A /* GetImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageViewController.swift; sourceTree = "<group>"; };
+		5B25248120FA25750091287A /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		5B25248320FA2C1D0091287A /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
+		B11A792AB8674CED0A3782B1 /* Pods-RxExample-own.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExample-own.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxExample-own/Pods-RxExample-own.release.xcconfig"; sourceTree = "<group>"; };
+		E69458AB16D26CD782FD6E36 /* Pods-RxExample-own.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExample-own.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxExample-own/Pods-RxExample-own.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90629D56EF65230188C6DFC /* Pods_RxExample_own.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,50 +49,82 @@
 		5B25245E20F9AE8A0091287A = {
 			isa = PBXGroup;
 			children = (
-				5B25246920F9AE8B0091287A /* GetImages */,
+				5B25246920F9AE8B0091287A /* RxExample-own */,
 				5B25246820F9AE8B0091287A /* Products */,
+				6876DF6E415FE83E019B865A /* Pods */,
+				96B5CE486A2E1ADA6360BB93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		5B25246820F9AE8B0091287A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B25246720F9AE8B0091287A /* GetImages.app */,
+				5B25246720F9AE8B0091287A /* RxExample-own.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5B25246920F9AE8B0091287A /* GetImages */ = {
+		5B25246920F9AE8B0091287A /* RxExample-own */ = {
 			isa = PBXGroup;
 			children = (
+				5B25247E20FA12D70091287A /* Views */,
 				5B25246A20F9AE8B0091287A /* AppDelegate.swift */,
-				5B25246C20F9AE8B0091287A /* ViewController.swift */,
 				5B25246E20F9AE8B0091287A /* Main.storyboard */,
 				5B25247120F9AE8B0091287A /* Assets.xcassets */,
 				5B25247320F9AE8B0091287A /* LaunchScreen.storyboard */,
 				5B25247620F9AE8B0091287A /* Info.plist */,
+				5B25247C20FA11AF0091287A /* InitViewController.swift */,
 			);
-			path = GetImages;
+			path = "RxExample-own";
+			sourceTree = "<group>";
+		};
+		5B25247E20FA12D70091287A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B25247F20FA12E20091287A /* GetImageViewController.swift */,
+				5B25248120FA25750091287A /* ColorViewController.swift */,
+				5B25248320FA2C1D0091287A /* GroupListViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6876DF6E415FE83E019B865A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E69458AB16D26CD782FD6E36 /* Pods-RxExample-own.debug.xcconfig */,
+				B11A792AB8674CED0A3782B1 /* Pods-RxExample-own.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96B5CE486A2E1ADA6360BB93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1466FA93226BFBC01CA81DF6 /* Pods_RxExample_own.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5B25246620F9AE8A0091287A /* GetImages */ = {
+		5B25246620F9AE8A0091287A /* RxExample-own */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B25247920F9AE8B0091287A /* Build configuration list for PBXNativeTarget "GetImages" */;
+			buildConfigurationList = 5B25247920F9AE8B0091287A /* Build configuration list for PBXNativeTarget "RxExample-own" */;
 			buildPhases = (
+				CA831E32E28BAE0D703FBD21 /* [CP] Check Pods Manifest.lock */,
 				5B25246320F9AE8A0091287A /* Sources */,
 				5B25246420F9AE8A0091287A /* Frameworks */,
 				5B25246520F9AE8A0091287A /* Resources */,
+				49A93E4BCA6BA69C20B6B604 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GetImages;
+			name = "RxExample-own";
 			productName = GetImages;
-			productReference = 5B25246720F9AE8B0091287A /* GetImages.app */;
+			productReference = 5B25246720F9AE8B0091287A /* RxExample-own.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5B25246220F9AE8A0091287A /* Build configuration list for PBXProject "GetImages" */;
+			buildConfigurationList = 5B25246220F9AE8A0091287A /* Build configuration list for PBXProject "RxExample-own" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B25246620F9AE8A0091287A /* GetImages */,
+				5B25246620F9AE8A0091287A /* RxExample-own */,
 			);
 		};
 /* End PBXProject section */
@@ -131,12 +174,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49A93E4BCA6BA69C20B6B604 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxExample-own/Pods-RxExample-own-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxExample-own/Pods-RxExample-own-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA831E32E28BAE0D703FBD21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxExample-own-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B25246320F9AE8A0091287A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B25246D20F9AE8B0091287A /* ViewController.swift in Sources */,
+				5B25248020FA12E20091287A /* GetImageViewController.swift in Sources */,
+				5B25247D20FA11AF0091287A /* InitViewController.swift in Sources */,
+				5B25248420FA2C1D0091287A /* GroupListViewController.swift in Sources */,
+				5B25248220FA25750091287A /* ColorViewController.swift in Sources */,
 				5B25246B20F9AE8B0091287A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +367,11 @@
 		};
 		5B25247A20F9AE8B0091287A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E69458AB16D26CD782FD6E36 /* Pods-RxExample-own.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GetImages/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RxExample-own/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.killi8n.GetImages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +382,11 @@
 		};
 		5B25247B20F9AE8B0091287A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11A792AB8674CED0A3782B1 /* Pods-RxExample-own.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GetImages/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RxExample-own/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.killi8n.GetImages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5B25246220F9AE8A0091287A /* Build configuration list for PBXProject "GetImages" */ = {
+		5B25246220F9AE8A0091287A /* Build configuration list for PBXProject "RxExample-own" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B25247720F9AE8B0091287A /* Debug */,
@@ -310,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B25247920F9AE8B0091287A /* Build configuration list for PBXNativeTarget "GetImages" */ = {
+		5B25247920F9AE8B0091287A /* Build configuration list for PBXNativeTarget "RxExample-own" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B25247A20F9AE8B0091287A /* Debug */,
